@@ -8,15 +8,7 @@ html {
   block-size: 100%;
 }
 
-.page {
-  inline-size: 1200px;
-  block-size: 100%;
-  margin: auto;
-  color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
-  background-color: #1b1919;
-}
+
 
 h1,
 h2,
@@ -48,4 +40,140 @@ ol {
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
+}
+
+.page {
+  inline-size: 1200px;
+  block-size: 100%;
+  margin: auto;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  background-color: #1b1919;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.content {
+  margin: 0 30px;
+  display: grid;
+  grid-template-areas:
+  "result content__details";
+  column-gap: 30px;
+  align-items: flex-end;
+}
+
+.result {
+  grid-area: result;
+}
+
+.content__details {
+  grid-area: content__details;
+}
+/* <----------section="result"----------> */
+
+/* div */
+.result__video-container {
+  width: 711px;
+  margin-bottom: 16px;
+}
+
+.result__video {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* form */
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-form__fieldset-title {
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+}
+
+/* <----------section="content__details"----------> */
+
+
+.title {
+  margin-bottom: 26px;
+  font-family: Oswald, sans-serif;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 70.5px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+
+.content__accent {
+  color: #545050;
+  
+}
+/* <--div--> */
+
+.content__list-container {
+  overflow-y:scroll;
+  height: 300px;
+}
+
+.content__list {
+  
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+}
+
+/* card */
+
+.content__video-card {
+  display: flex;
+  align-content: flex-start;
+ 
+}
+
+.content__video-card-description-container {
+  flex-grow: 1;
+  /* width: 50%; */
+}
+
+.content__video-card-thumbnail {
+  width: 195px;
+  object-fit: contain;
+  object-position: center;
+ 
+}
+
+.content__card-link {
+  text-decoration: none;
+  color:#fff;
+}
+
+.content__video-card-title {
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content__video-card-description {
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16.2px;
+  /* display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp-: 3;
+  overflow: hidden; */
 }
