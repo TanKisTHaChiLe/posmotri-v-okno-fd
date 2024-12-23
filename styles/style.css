@@ -37,6 +37,10 @@ ol {
   list-style: none;
 }
 
+input {
+  appearance: none;
+}
+
 /* Кастомный скроллбар */
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
@@ -94,6 +98,7 @@ ol {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .search-form {
@@ -143,7 +148,6 @@ ol {
   border-color: #ffffff;
   color: #ffffff;
   padding: 2px 0;
-  appearance: none;
 }
 
 .search-form__textfield:focus {
@@ -246,6 +250,7 @@ ol {
   overflow-y: auto;
   padding: 1px 3px 2px 2px;
   height: 298px;
+  width: 399px;
 }
 
 .content__list {
@@ -287,6 +292,10 @@ ol {
 }
 
 .content__card-link_current {
+  background-color: #545050;
+}
+
+.content__card-link:active {
   background-color: #545050;
 }
 
